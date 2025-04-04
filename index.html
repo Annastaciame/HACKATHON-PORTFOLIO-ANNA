@@ -1,134 +1,726 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script>
-        function openForm(formId) {
-            document.getElementById(formId).style.display = "block";
-        }
-
-        function closeForm(formId) {
-            document.getElementById(formId).style.display = "none";
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annastacia Mulimi - Frontend Developer</title>
+  <meta name="description" content="Portfolio website for Annastacia Mulimi, a passionate Frontend Developer">
+  <meta name="author" content="Annastacia Mulimi">
+  
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Annastacia.</a>
-        <nav class="navbar">
-            <a href="#Home" class="active">Home</a>
-            <a href="#About">About</a>
-            <a href="#Education">Education</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Experience">Experience</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Testimonials">Testimonials</a>
-            <a href="#Contacts">Contacts</a>
-        </nav>
-    </header>
-
-    <section id="Home" class="Home">
-        <div class="home-content">
-            <h1 class="animated-text">Hi, I'm Annastacia Mulimi</h1>
-            <h3>Frontend Developer</h3>
-            <p>I'm a passionate frontend developer<br> with a knack for creating <br>beautiful and functional web applications.<br>
-             I love turning ideas into reality through code.</p>
-        </div>
-    </section>
-
-    <section id="About" class="About">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Annastacia, a tech enthusiast, passionate about FrontEnd Development, problem-solving, and creating impactful solutions.</p>
-        </div>
-    </section>
-
-    <section id="Education" class="Education">
-        <div class="container">
-            <h2>Education</h2>
-            <p>B.Sc in Information Technology | Online Software Development Training | Cybersecurity | Continuous Learning Enthusiast.</p>
-        </div>
-    </section>
-
-    <section id="Skills" class="Skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <p>FrontEnd Development | HTML | CSS | JavaScript | Node.js | Express.js | MongoDB | Java | PC Troubleshooting | Problem-Solving.</p>
-        </div>
-    </section>
-
-    <section id="Experience" class="Experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <p>Hands-on projects, networking of machines, real-world applications, and collaborations in tech communities.</p>
-        </div>
-    </section>
-
-    <section id="Projects" class="Projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>Developed APIs, Web Apps, and participated in hackathons & tech initiatives.</p>
-        </div>
-    </section>
-
-    <section id="Testimonials" class="Testimonials">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <p>"Annastacia is a dedicated and innovative developer who brings solutions to life!" - John Malek</p>
-            <p>"Bold, brilliant, and truly unstoppable! Annastacia is not just a tech enthusiast—she’s a force to be reckoned with. Her passion for backend development shines through in everything she does, and her dedication to learning and growing is truly inspiring. Beyond her technical skills, she carries an aura of confidence, kindness, and adventure that makes her a joy to work with. Whether it's coding, problem-solving, or simply lighting up a room with her vibrant energy, she does it all with excellence. A true gem in the tech space and beyond!"- Steve Maina</p>
-        </div>
-    </section>
-
-    <section id="Contacts" class="Contacts">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p><i class='bx bxl-gmail'></i>: annastacia.mulimi@gmail.com <br> 
-               <a href="#"><i class='bx bxl-linkedin' ></i></a>: www.linkedin.com/in/
-               annastacia-mulimi-pauline-55a68313a
-                <br> 
-               <a href="#"><i class='bx bxl-github' ></i></a>:https://github.com/annastaciame </p>
-        </div>
-    </section>
-
-    <div class="btn-box">
-        <a href="#" onclick="openForm('hireForm')">Hire Me</a>
-        <a href="#" onclick="openForm('contactForm')">Let's Talk</a>
-        <a href="Annastacia_CV.pdf" download>Download CV</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo">Annastacia.</a>
+      
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <nav class="nav-mobile">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Hire Me Form -->
-    <div id="hireForm" class="form-popup">
-        <div class="form-container">
-            <h2>Hire Me</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your Email">
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Tell me about the job"></textarea>
-            <button onclick="closeForm('hireForm')">Submit</button>
-            <button onclick="closeForm('hireForm')" class="close-btn">Close</button>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="animated-text">Annastacia Mulimi</span></h1>
+        <h3 class="hero-subtitle">Frontend Developer</h3>
+        <p class="hero-description">
+          I'm a passionate frontend developer with a knack for creating beautiful and functional web applications. 
+          I love turning ideas into reality through code.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="hire-btn">Hire Me</button>
+          <button class="btn btn-outline" id="talk-btn">Let's Talk</button>
+          <a href="#" class="btn btn-secondary">Download CV</a>
         </div>
-    </div>
-
-    <!-- Contact Form -->
-    <div id="contactForm" class="form-popup">
-        <div class="form-container">
-            <h2>Let's Talk</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="contact-name" placeholder="Your Name">
-            <label for="email">Email:</label>
-            <input type="email" id="contact-email" placeholder="Your Email">
-            <label for="message">Message:</label>
-            <textarea id="contact-message" placeholder="Write your message"></textarea>
-            <button onclick="closeForm('contactForm')">Send</button>
-            <button onclick="closeForm('contactForm')" class="close-btn">Close</button>
+      </div>
+      
+      <div class="hero-image">
+        <div class="profile-showcase">
+          <h4>Featured Projects</h4>
+          <ul>
+            <li>Food Order App</li>
+            <li>Portfolio Website</li>
+            <li>E-commerce Platform</li>
+          </ul>
         </div>
+      </div>
     </div>
+    
+    <a href="#about" class="scroll-indicator">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      
+      <div class="about-description">
+        <p>
+          I am Annastacia, a tech enthusiast, passionate about Frontend Development, 
+          problem-solving, and creating impactful solutions. My journey in technology 
+          is driven by a desire to build accessible, user-friendly web experiences 
+          that solve real-world problems.
+        </p>
+      </div>
+      
+      <div class="skills-cards">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Creative</h3>
+          <p>Bringing unique and innovative design solutions to each project</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Detail-Oriented</h3>
+          <p>Focusing on the small details that make a big difference</p>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-sparkles"></i>
+          </div>
+          <h3>Problem Solver</h3>
+          <p>Tackling complex challenges with analytical thinking</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      
+      <div class="education-items">
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="education-content">
+            <h3>B.Sc in Information Technology</h3>
+            <p class="education-period"><i class="fas fa-calendar"></i> 2018 - 2022</p>
+            <p class="education-description">
+              Comprehensive education in various IT disciplines, with a focus on software development
+              and web technologies. Developed strong analytical and problem-solving skills.
+            </p>
+          </div>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="education-content">
+            <h3>Online Software Development Training</h3>
+            <p class="education-period"><i class="fas fa-calendar"></i> 2021 - Present</p>
+            <p class="education-description">
+              Continuous professional development through specialized courses in frontend technologies,
+              focusing on modern JavaScript frameworks and responsive design principles.
+            </p>
+          </div>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="education-content">
+            <h3>Cybersecurity Certification</h3>
+            <p class="education-period"><i class="fas fa-calendar"></i> 2023</p>
+            <p class="education-description">
+              Specialized training in web application security, secure coding practices,
+              and vulnerability assessment, complementing frontend development skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      
+      <div class="skills-container">
+        <div class="skills-box">
+          <h3>Technical Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-code"></i> HTML</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-code"></i> CSS</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-terminal"></i> JavaScript</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-server"></i> Node.js</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-server"></i> Express.js</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-box">
+          <h3>Additional Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 65%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-terminal"></i> Java</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-laptop"></i> PC Troubleshooting</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fas fa-globe"></i> Responsive Design</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="professional-skills">
+        <h3>Professional Skills</h3>
+        <div class="professional-skills-grid">
+          <div class="professional-skill">Problem-Solving</div>
+          <div class="professional-skill">Team Collaboration</div>
+          <div class="professional-skill">Time Management</div>
+          <div class="professional-skill">Communication</div>
+          <div class="professional-skill">Creativity</div>
+          <div class="professional-skill">Adaptability</div>
+          <div class="professional-skill">Attention to Detail</div>
+          <div class="professional-skill">Critical Thinking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <div class="experience-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="experience-details">
+              <h3>Frontend Developer</h3>
+              <p class="experience-period"><i class="fas fa-calendar"></i> 2022 - Present</p>
+              <p class="experience-description">
+                Developing responsive web applications with modern JavaScript frameworks.
+                Creating intuitive user interfaces and implementing design systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <div class="experience-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="experience-details">
+              <h3>Web Development Intern</h3>
+              <p class="experience-period"><i class="fas fa-calendar"></i> 2021 - 2022</p>
+              <p class="experience-description">
+                Assisted in building and maintaining websites. Collaborated with senior
+                developers to implement responsive designs and optimize performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <div class="experience-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="experience-details">
+              <h3>Tech Community Volunteer</h3>
+              <p class="experience-period"><i class="fas fa-calendar"></i> 2020 - Present</p>
+              <p class="experience-description">
+                Active member in local tech communities. Participated in hackathons and
+                collaborative projects. Mentored junior developers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image gradient-purple">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">E-commerce Website</h3>
+            <p class="project-description">
+              A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Stripe</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image gradient-blue">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              A productivity app for organizing tasks with drag-and-drop functionality and user authentication.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image gradient-cyan">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-description">
+              Real-time weather application with location-based forecasts and interactive maps.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>API Integration</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image gradient-pink">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              A custom-designed portfolio website with animations and responsive layout.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="more-projects">
+        <p>
+          These are just a few highlights from my portfolio. I've worked on numerous other projects
+          including APIs, web applications, and collaborative hackathon submissions.
+        </p>
+        <a href="https://github.com/annastaciame" class="github-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          <span>See more on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      
+      <div class="testimonial-container">
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+              <p>Annastacia is a dedicated and innovative developer who brings solutions to life!</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">J</div>
+                <div class="testimonial-info">
+                  <h4>John Malek</h4>
+                  <p>Senior Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+              <p>Bold, brilliant, and truly unstoppable! Annastacia is not just a tech enthusiast—she's a force to be reckoned with. Her passion for backend development shines through in everything she does, and her dedication to learning and growing is truly inspiring.</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">S</div>
+                <div class="testimonial-info">
+                  <h4>Steve Maina</h4>
+                  <p>Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+              <p>Working with Annastacia was a pleasure. Her attention to detail and commitment to quality made our project a success. She consistently delivers clean, efficient code and is always willing to go the extra mile.</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">S</div>
+                <div class="testimonial-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>Product Owner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-controls">
+          <button class="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:annastacia.mulimi@gmail.com">annastacia.mulimi@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/annastacia-mulimi-pauline-55a68313a" target="_blank" rel="noopener noreferrer">
+                  annastacia-mulimi-pauline
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <a href="https://github.com/annastaciame" target="_blank" rel="noopener noreferrer">
+                  annastaciame
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p>Available upon request</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <p class="contact-label">Location</p>
+                <p>Remote - Available Worldwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <h3>Send a Message</h3>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forms for Hire Me and Let's Talk buttons -->
+  <div class="modal" id="hire-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Hire Me</h2>
+      <form id="hire-form" class="modal-form">
+        <div class="form-group">
+          <label for="hire-name">Name</label>
+          <input type="text" id="hire-name" placeholder="Your Name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="hire-email">Email</label>
+          <input type="email" id="hire-email" placeholder="Your Email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="hire-message">Message</label>
+          <textarea id="hire-message" rows="4" placeholder="Tell me about the job" required></textarea>
+        </div>
+        
+        <div class="form-buttons">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-outline modal-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="talk-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Let's Talk</h2>
+      <form id="talk-form" class="modal-form">
+        <div class="form-group">
+          <label for="talk-name">Name</label>
+          <input type="text" id="talk-name" placeholder="Your Name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="talk-email">Email</label>
+          <input type="email" id="talk-email" placeholder="Your Email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="talk-message">Message</label>
+          <textarea id="talk-message" rows="4" placeholder="Write your message" required></textarea>
+        </div>
+        
+        <div class="form-buttons">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="button" class="btn btn-outline modal-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <i class="fas fa-check-circle"></i>
+      <div class="toast-message">
+        <span class="toast-title">Success</span>
+        <span class="toast-text">Your message has been sent successfully!</span>
+      </div>
+    </div>
+    <div class="toast-progress"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Annastacia Mulimi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/annastaciame" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/annastacia-mulimi-pauline-55a68313a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:annastacia.mulimi@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
