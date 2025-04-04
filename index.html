@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        function openForm(formId) {
+            document.getElementById(formId).style.display = "block";
+        }
+
+        function closeForm(formId) {
+            document.getElementById(formId).style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Annastacia.</a>
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Testimonials">Testimonials</a>
+            <a href="#Contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <section id="Home" class="Home">
+        <div class="home-content">
+            <h1 class="animated-text">Hi, I'm Annastacia Mulimi</h1>
+            <h3>Frontend Developer</h3>
+            <p>I'm a passionate frontend developer<br> with a knack for creating <br>beautiful and functional web applications.<br>
+             I love turning ideas into reality through code.</p>
+        </div>
+    </section>
+
+    <section id="About" class="About">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Annastacia, a tech enthusiast, passionate about FrontEnd Development, problem-solving, and creating impactful solutions.</p>
+        </div>
+    </section>
+
+    <section id="Education" class="Education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>B.Sc in Information Technology | Online Software Development Training | Cybersecurity | Continuous Learning Enthusiast.</p>
+        </div>
+    </section>
+
+    <section id="Skills" class="Skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p>FrontEnd Development | HTML | CSS | JavaScript | Node.js | Express.js | MongoDB | Java | PC Troubleshooting | Problem-Solving.</p>
+        </div>
+    </section>
+
+    <section id="Experience" class="Experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <p>Hands-on projects, networking of machines, real-world applications, and collaborations in tech communities.</p>
+        </div>
+    </section>
+
+    <section id="Projects" class="Projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Developed APIs, Web Apps, and participated in hackathons & tech initiatives.</p>
+        </div>
+    </section>
+
+    <section id="Testimonials" class="Testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>"Annastacia is a dedicated and innovative developer who brings solutions to life!" - John Malek</p>
+            <p>"Bold, brilliant, and truly unstoppable! Annastacia is not just a tech enthusiast—she’s a force to be reckoned with. Her passion for backend development shines through in everything she does, and her dedication to learning and growing is truly inspiring. Beyond her technical skills, she carries an aura of confidence, kindness, and adventure that makes her a joy to work with. Whether it's coding, problem-solving, or simply lighting up a room with her vibrant energy, she does it all with excellence. A true gem in the tech space and beyond!"- Steve Maina</p>
+        </div>
+    </section>
+
+    <section id="Contacts" class="Contacts">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p><i class='bx bxl-gmail'></i>: annastacia.mulimi@gmail.com <br> 
+               <a href="#"><i class='bx bxl-linkedin' ></i></a>: www.linkedin.com/in/
+               annastacia-mulimi-pauline-55a68313a
+                <br> 
+               <a href="#"><i class='bx bxl-github' ></i></a>:https://github.com/annastaciame </p>
+        </div>
+    </section>
+
+    <div class="btn-box">
+        <a href="#" onclick="openForm('hireForm')">Hire Me</a>
+        <a href="#" onclick="openForm('contactForm')">Let's Talk</a>
+        <a href="Annastacia_CV.pdf" download>Download CV</a>
+    </div>
+
+    <!-- Hire Me Form -->
+    <div id="hireForm" class="form-popup">
+        <div class="form-container">
+            <h2>Hire Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Tell me about the job"></textarea>
+            <button onclick="closeForm('hireForm')">Submit</button>
+            <button onclick="closeForm('hireForm')" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contactForm" class="form-popup">
+        <div class="form-container">
+            <h2>Let's Talk</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="contact-name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="contact-email" placeholder="Your Email">
+            <label for="message">Message:</label>
+            <textarea id="contact-message" placeholder="Write your message"></textarea>
+            <button onclick="closeForm('contactForm')">Send</button>
+            <button onclick="closeForm('contactForm')" class="close-btn">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>
